@@ -1,3 +1,6 @@
+import abstractfactory.AbstractFactory;
+import abstractfactory.InterfazUI;
+import abstractfactory.Render;
 import factory.Libro;
 import factory.LibroDigital;
 import factory.LibroFisico;
@@ -36,5 +39,17 @@ public class Main {
         System.out.println("LIBRO 2 (creado tipo digital)");
         System.out.println(libro2);
         System.out.println(libro2.getClass());
+
+        // PARTE 3, Abstract Factory
+        System.out.println("------------------PARTE 3");
+        System.out.println("Implementación de Abstract factory. Debe crear UI Admin primero y luego UI Usuario");
+        InterfazUI adminUIFactory = AbstractFactory.obtenerInterfaz("Admin");
+        Render ui = adminUIFactory.crearInterfaz();
+        ui.pintar(); //Debe mostrar la interfaz de Administrador
+
+        InterfazUI userUIFactory = AbstractFactory.obtenerInterfaz("Usuario");
+        Render ui2 = userUIFactory.crearInterfaz();
+        ui2.pintar();
+
     }
 }
