@@ -6,6 +6,7 @@ import factory.Libro;
 import factory.LibroDigital;
 import factory.LibroFisico;
 import factory.LogisticaLibro;
+import prototype.Prestamo;
 import singleton.Database;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -68,5 +69,20 @@ public class Main {
 
         System.out.println(user1);
         System.out.println(user2);
+
+        //PARTE 5, Patron Prototype
+        System.out.println("---------------PARTE 5");
+        System.out.println("Implementación de Prototype");
+        Prestamo prestamo = new Prestamo("Moby Dick", "Pepe", "1/01/2025", "1/03/2025");
+
+        Prestamo copia = prestamo.clone();
+        copia.setLibro("El Principito");
+
+        Prestamo copia2 = prestamo.clone();
+        copia2.setLibro("El Eternauta");
+
+        System.out.println("Objeto original: " + prestamo);
+        System.out.println("Objeto copia: " + copia);
+        System.out.println("Objeto copia2: " + copia2);
     }
 }
