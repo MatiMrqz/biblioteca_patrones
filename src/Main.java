@@ -1,6 +1,7 @@
 import abstractfactory.AbstractFactory;
 import abstractfactory.InterfazUI;
 import abstractfactory.Render;
+import builder.Usuario;
 import factory.Libro;
 import factory.LibroDigital;
 import factory.LibroFisico;
@@ -51,5 +52,21 @@ public class Main {
         Render ui2 = userUIFactory.crearInterfaz();
         ui2.pintar();
 
+        //PARTE 4, Patron Builder
+        System.out.println("---------------PARTE 4");
+        System.out.println("Implementación de Builder.");
+        Usuario user1 = new Usuario.Builder()
+                .setNombre("Fulanito")
+                .setEmail("fulanito@email.com")
+                .build();
+
+        Usuario user2 = new Usuario.Builder()
+                .setNombre("Menganito")
+                .setTelefono("123456789")
+                .setDireccion("Calle Falsa 123")
+                .build();
+
+        System.out.println(user1);
+        System.out.println(user2);
     }
 }
