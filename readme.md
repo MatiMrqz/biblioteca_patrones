@@ -66,11 +66,6 @@ El sistema simula la gestión de **usuarios**, **libros** y la interacción con 
 
 ---
 
-Genial 👌, te armo la sección de **Ejemplos de uso** con las salidas de consola que produciría tu `Main.java`.
-De esta forma el README queda mucho más didáctico y autoexplicativo.
-
----
-
 ## 📝 Ejemplos de uso
 
 El archivo `Main.java` demuestra cada patrón de diseño en acción dentro del sistema de biblioteca.
