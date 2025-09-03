@@ -231,9 +231,3 @@ Este trabajo práctico tiene como finalidad:
 * Comprender la **importancia de los patrones de diseño** en la resolución de problemas comunes de software.
 * Aplicar los patrones en un **contexto concreto** (sistema de biblioteca).
 * Analizar las **ventajas y desventajas** de cada patrón.
-
----
-
-## 👥 Autores
-
-* Matías Márquez
