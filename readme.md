@@ -1,5 +1,16 @@
 # 📚 Trabajo Práctico – Patrones de Diseño en Java
 
+Comisión 3K10
+
+Integrantes:
+* Copparoni, Macarena 
+* Echavarria, Emiliano 
+* Fernandez, Candela
+* Fernandez, Julian 
+* Marquez, Matias 
+* Montenegro, Sol
+* Zaupa, Bruno
+
 Este repositorio contiene la implementación de un **sistema de biblioteca** desarrollado en **Java**, cuyo objetivo es poner en práctica distintos **patrones de diseño**.
 
 El sistema simula la gestión de **usuarios**, **libros** y la interacción con una capa de **UI básica**, utilizando como base los siguientes patrones:
